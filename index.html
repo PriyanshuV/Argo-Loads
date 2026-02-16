@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agriculture Transportation Network India | Argo Load</title>
+
+    <link rel="icon" type="image/png" href="https://i.ibb.co/rKNvWbj8/Chat-GPT-Image-Feb-14-2026-05-20-09-PM.png" />
+
+    <meta name="description" content="Punjab grain mandi transport, Tata and Ashok Leyland truck logistics, fertilizer and farm produce transportation across India. Reliable agri logistics network." />
+    <meta name="keywords" content="Punjab mandi transport, grain truck India, Tata truck agriculture, Ashok Leyland logistics, farm produce transport India, fertilizer transport India" />
+    <style>
+      /* RESET & BASE */
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      }
+
+      /* NAVBAR */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 110px;
+        background: #0f3d2e;
+        transition: all 0.3s ease;
+        z-index: 9999;
+      }
+      .navbar.scrolled {
+        height: 80px;
+        background: #0c3024;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      }
+      .nav-container {
+        max-width: 1400px;
+        margin: auto;
+        height: 100%;
+        padding: 0 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none;
+        color: white;
+      }
+      .logo-img {
+        height: 90px;
+        transition: 0.3s;
+        background: none; /* Placeholder for your logo */
+        border-radius: 0px;
+        padding: 0;
+        box-shadow: none;
+      }
+      .navbar.scrolled .logo-img {
+        height: 70px;
+      }
+      .logo-text {
+        font-size: 32px;
+        font-weight: 700;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+      }
+      .nav-links a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 5px;
+        transition: color 0.3s;
+      }
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        background: #9be7c4;
+        transition: width 0.3s;
+      }
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+      .nav-links a.active {
+        color: #9be7c4;
+      }
+      body {
+        padding-top: 110px;
+      }
+
+      /* HERO VIDEO */
+      .hero {
+        position: relative;
+        height: 90vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        color: white;
+      }
+      .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          rgba(15, 61, 46, 0.75),
+          rgba(15, 61, 46, 0.75)
+        );
+        z-index: -1;
+      }
+      .hero-content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 100px;
+        text-align: center;
+      }
+      .hero-content h1 {
+        font-size: 60px;
+        margin-bottom: 30px;
+        font-weight: 700;
+      }
+      .hero-content p {
+        font-size: 22px;
+        margin-bottom: 40px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* BUTTONS */
+      .btn-primary,
+      .btn-secondary {
+        display: inline-block;
+        padding: 18px 40px;
+        font-size: 20px;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.3s;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+      }
+      .btn-primary {
+        background: #2e8b57;
+        color: white;
+      }
+      .btn-primary:hover {
+        background: #3fa86c;
+      }
+      .btn-secondary {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+      }
+      .btn-secondary:hover {
+        background: white;
+        color: #0f3d2e;
+      }
+
+      /* SECTIONS */
+      .section {
+        position: relative;
+        padding: 140px 120px;
+        text-align: center;
+      }
+      .section-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        max-height: 600px;
+        width: 40%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.08;
+      }
+      .section-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+      .section h2 {
+        font-size: 44px;
+        margin-bottom: 20px;
+        color: #0f3d2e;
+        font-weight: 700;
+      }
+      .section p {
+        font-size: 22px;
+        max-width: 900px;
+        margin: 0 auto 40px;
+        color: #333;
+        line-height: 1.6;
+      }
+      .section.light {
+        background: #f8fbf9;
+      }
+
+      /* FORMS */
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-top: 60px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .form-group {
+        margin-bottom: 0;
+      }
+      .form-group.full-width {
+        grid-column: 1 / -1;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #0f3d2e;
+        text-align: left;
+        font-size: 16px;
+      }
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        width: 100%;
+        padding: 15px 18px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: all 0.3s;
+        background: white;
+      }
+      .form-group input:focus,
+      .form-group textarea:focus,
+      .form-group select:focus {
+        outline: none;
+        border-color: #2e8b57;
+        box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.1);
+      }
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      /* BENEFITS CARDS */
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+        margin: 80px auto 60px;
+        max-width: 1200px;
+      }
+      .benefit-card {
+        background: white;
+        padding: 50px 40px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        position: relative;
+        overflow: hidden;
+        border: 2px solid transparent;
+      }
+      .benefit-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #2e8b57, #9be7c4);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+      }
+      .benefit-card.hover::before {
+        transform: scaleX(1);
+      }
+      .benefit-card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+        border-color: #2e8b57;
+      }
+      .benefit-card .card-icon {
+        font-size: 48px;
+        margin-bottom: 25px;
+        display: block;
+      }
+      .benefit-card h3 {
+        font-size: 28px;
+        color: #0f3d2e;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+      .benefit-card p {
+        font-size: 18px;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+      .card-stats {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .card-stats span {
+        font-size: 16px;
+        font-weight: 600;
+        color: #2e8b57;
+        background: #f0f9f4;
+        padding: 8px 16px;
+        border-radius: 20px;
+        white-space: nowrap;
+      }
+
+      /* TESTIMONIALS */
+      .testimonial-container {
+        display: flex;
+        overflow: hidden;
+        max-width: 900px;
+        height: 300px;
+        margin: 60px auto 0;
+        border-radius: 20px;
+        position: relative;
+      }
+      .testimonial-card {
+        min-width: 100%;
+        padding: 50px 40px;
+        background: white;
+        border-radius: 20px;
+        text-align: center;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+      }
+      .testimonial-card.active {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .testimonial-card p {
+        font-style: italic;
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: #0f3d2e;
+        line-height: 1.5;
+      }
+      .testimonial-card span {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: #2e8b57;
+      }
+
+      /* CONTACT */
+      .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        margin-top: 60px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .contact-info {
+        text-align: center;
+        padding-right: 40px;
+      }
+      .contact-logo {
+        display: inline-block;
+        padding-right: 20px;
+        margin-bottom: 30px;
+      }
+      .contact-logo .logo-img {
+        height: 120px !important;
+        width: auto;
+      }
+      .contact-details h3 {
+        font-size: 28px;
+        color: #0f3d2e;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+      .address {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+      .contact-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .contact-list li {
+        margin-bottom: 25px;
+        font-size: 18px;
+      }
+      .contact-list strong {
+        color: #0f3d2e;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .contact-list a {
+        color: #2e8b57;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .contact-list a:hover {
+        text-decoration: underline;
+      }
+      .contact-form {
+        background: white;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+      }
+      .contact-form h3 {
+        font-size: 26px;
+        color: #0f3d2e;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+      .contact-form p {
+        color: #666;
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+      .contact-form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+      }
+      .contact-form-grid .full-width {
+        grid-column: 1 / -1;
+      }
+      .contact-form .form-group input,
+      .contact-form .form-group textarea {
+        padding: 16px 20px;
+        border: 2px solid #e8f0e8;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: all 0.3s;
+      }
+      .contact-form .form-group input:focus,
+      .contact-form .form-group textarea:focus {
+        border-color: #2e8b57;
+        box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.1);
+      }
+      .contact-form .btn-primary {
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 1200px) {
+        .section {
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+        .section-img {
+          width: 50%;
+        }
+      }
+      @media (max-width: 768px) {
+        .nav-container {
+          padding: 0 30px;
+        }
+        .nav-links {
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+        .nav-links a {
+          font-size: 16px;
+        }
+        .hero-content {
+          padding: 0 40px;
+          text-align: center;
+        }
+        .hero-content h1 {
+          font-size: 42px;
+        }
+        .hero-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .section {
+          padding: 100px 40px;
+        }
+        .section-img {
+          display: none;
+        }
+        .form-grid,
+        .contact-form-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .benefits-grid {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        .testimonial-card {
+          padding: 40px 25px;
+        }
+        .testimonial-card p {
+          font-size: 20px;
+        }
+        .contact-wrapper {
+          grid-template-columns: 1fr;
+          gap: 50px;
+        }
+        .contact-info {
+          padding-right: 0;
+        }
+        .contact-form {
+          padding: 30px 25px;
+        }
+      }
+      @media (max-width: 480px) {
+        .logo-text {
+          font-size: 24px;
+        }
+      }
+    </style></head>
+
+  <body>
+
+    <!-- NAVBAR (UNCHANGED) -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo-section">
+          <img
+            src="https://i.ibb.co/rKNvWbj8/Chat-GPT-Image-Feb-14-2026-05-20-09-PM.png"
+            alt="Argo Load Logo"
+            class="logo-img"
+          />
+          <span class="logo-text">ARGO LOAD</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#benefits">Why Us</a></li>
+          <li><a href="#request-quote">Request Quote</a></li>
+          <li><a href="#submit-quote">Submit Quote</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <!-- 🇮🇳 Punjab Grain Mandi Loading Video -->
+      <video autoplay muted loop playsinline>
+        <source src="https://cdn.coverr.co/videos/coverr-loading-cargo-onto-a-truck-9715/1080p.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-content">
+        <h1>
+          Bharat’s Trusted Agriculture Transport Network<br>
+          <span style="font-size: 22px; font-weight: 400;">
+            भारत का भरोसेमंद कृषि परिवहन नेटवर्क
+          </span>
+        </h1>
+
+        <p>
+          We specialize in safe, timely and efficient transportation of agricultural produce from farms to markets across India.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#request-quote" class="btn-primary">Request Transport</a>
+          <a href="#submit-quote" class="btn-secondary">Submit Transport Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+      <!-- 🌾 Punjab Wheat Field -->
+      <img 
+        src="https://images.unsplash.com/photo-1592997571659-0b21ff64313b"
+        class="section-img"
+        alt="Punjab wheat farming field India"
+      />
+
+      <div class="section-content">
+        <h2>About Argo Load</h2>
+        <p>
+          Argo Load connects Indian mandis, agri distributors and verified truck operators
+          for seamless farm-to-market logistics. We transport grains, fruits, vegetables, pulses and other farm produce across India with complete care and efficiency. Our focus is simple — ensure fresh delivery, reduce delays and maintain quality from farm to destination.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="benefits" class="section light">
+
+      <!-- 🚛 Indian Tata / Ashok Leyland Truck -->
+      <img 
+        src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7"
+        class="section-img"
+        alt="Indian Tata cargo truck highway"
+      />
+
+      <div class="section-content">
+        <h2>Why Indian Transporters Choose Us</h2>
+        <p>
+          Join verified truck operators
+          moving agricultural loads daily across Indian agriculture routes.
+        </p>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="card-icon">🚛</div>
+            <h3>Consistent Loads</h3>
+            <p>
+              agriculture and seed transport
+              across Punjab, Haryana, Rajasthan and beyond.
+            </p>
+            <div class="card-stats">
+              <span>50+ Weekly Loads</span>
+              
+            </div>
+          </div>
+
+          <div class="benefit-card">
+            <div class="card-icon">💰</div>
+            <h3>Fast & Secure Payments</h3>
+            <p>
+              Transparent freight rates. Direct bank transfers.
+              No middlemen confusion.
+            </p>
+            <div class="card-stats">
+              <span>7-Day Payout</span>
+              <span>Trusted Clients</span>
+            </div>
+          </div>
+
+          <div class="benefit-card">
+            <div class="card-icon">🌾</div>
+            <h3>Verified Agricultural Network</h3>
+            <p>
+              Work with procurement agencies, mandis,
+              agri-input suppliers and bulk distributors.
+            </p>
+            <div class="card-stats">
+              <span>100+ Clients</span>
+              <span>Pan-India Routes</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#submit-quote" class="btn-primary">Start Getting Loads →</a>
+      </div>
+    </section>
+    <!-- REQUEST QUOTE -->
+    <section id="request-quote" class="section">
+      <div class="section-content">
+        <h2>Request Agriculture Transport</h2>
+        <p>
+          Need reliable truck placement for grain, fertilizer, seeds or farm produce?
+          Submit your transport requirement and our logistics team will respond quickly.
+        </p>
+
+        <form id="requestForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Company Name</label>
+              <input type="text" required />
+            </div>
+
+            <div class="form-group">
+              <label>Contact Person</label>
+              <input type="text" required />
+            </div>
+
+            <div class="form-group">
+              <label>Pickup Location</label>
+              <input type="text" placeholder="e.g. Ludhiana" required />
+            </div>
+
+            <div class="form-group">
+              <label>Delivery Location</label>
+              <input type="text" placeholder="e.g. Delhi Warehouse" required />
+            </div>
+
+            <div class="form-group">
+              <label>Commodity Type</label>
+              <select required>
+                <option value="">Select</option>
+                <option>Wheat</option>
+                <option>Rice</option>
+                <option>Pulses</option>
+                <option>Fertilizer</option>
+                <option>Seeds</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Truck Type Required</label>
+              <select required>
+                <option value="">Select</option>
+                <option>Open Body</option>
+                <option>Container</option>
+                <option>Trailer</option>
+                <option>Tipper</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label>Additional Details</label>
+              <textarea></textarea>
+            </div>
+          </div>
+
+          <div style="margin-top:40px;">
+            <button class="btn-primary">Submit Transport Request</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SUBMIT QUOTE -->
+    <section id="submit-quote" class="section light">
+      <div class="section-content">
+        <h2>Submit Transport Quote</h2>
+        <p>
+          Are you a verified truck operator?
+          Submit your freight quote and get consistent agricultural loads.
+        </p>
+
+        <form id="submitForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Transport Company Name</label>
+              <input type="text" required />
+            </div>
+
+            <div class="form-group">
+              <label>Contact Number</label>
+              <input type="tel" required />
+            </div>
+
+            <div class="form-group">
+              <label>Truck Type</label>
+              <select required>
+                <option value="">Select</option>
+                <option>Tata Open Truck</option>
+                <option>Ashok Leyland Truck</option>
+                <option>Container</option>
+                <option>Trailer</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Available Route</label>
+              <input type="text" placeholder="e.g. Punjab → Rajasthan" required />
+            </div>
+
+            <div class="form-group">
+              <label>Freight Rate (₹)</label>
+              <input type="number" required />
+            </div>
+
+            <div class="form-group">
+              <label>Availability Date</label>
+              <input type="date" required />
+            </div>
+
+            <div class="form-group full-width">
+              <label>Additional Details</label>
+              <textarea></textarea>
+            </div>
+          </div>
+
+          <div style="margin-top:40px;">
+            <button class="btn-primary">Submit Quote</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+      <div class="section-content">
+        <h2>What Our Transport Partners Say</h2>
+
+        <div class="testimonial-container" id="testimonialSlider">
+          <div class="testimonial-card active">
+            <p>
+              “We consistently receive loads from Argo Load.
+              Payments are clear and on time.”
+            </p>
+            <span>Rajveer Singh – Punjab Transporter</span>
+          </div>
+
+          <div class="testimonial-card">
+            <p>
+              “Professional coordination and steady agricultural routes.
+              No unnecessary delays.”
+            </p>
+            <span>Mahesh Yadav – Haryana Fleet Owner</span>
+          </div>
+
+          <div class="testimonial-card">
+            <p>
+              “Good freight rates and verified clients.
+              Reliable agri logistics partner.”
+            </p>
+            <span>Sobhit Sinha – Rajasthan Operator</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section light">
+      <div class="section-content">
+        <h2>Contact Agriculture Logistics Team</h2>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="contact-logo">
+              <img
+                src="https://i.ibb.co/rKNvWbj8/Chat-GPT-Image-Feb-14-2026-05-20-09-PM.png"
+                class="logo-img"
+                alt="Argo Load Logo"
+              />
+            </div>
+
+            <div class="contact-details">
+              <h3>Argo Load India</h3>
+              <p class="address">
+                Serving Agricultural Logistics <br />
+                Needs throughout India
+              </p>
+
+              <ul class="contact-list">
+                <li>
+                  <strong>Phone</strong>
+                  <a href="tel:+918000516893">+91 8000516893</a>
+                </li>
+                <li>
+                  <strong>Email</strong>
+                  <a href="mailto:loadsagro@gmail.com">loadsagro@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <p>We’ll respond within 24 hours.</p>
+
+            <form id="contactForm">
+              <div class="contact-form-grid">
+                <div class="form-group">
+                  <input type="text" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                  <input type="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group full-width">
+                  <textarea placeholder="Your Message" required></textarea>
+                </div>
+              </div>
+
+              <button class="btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- KEEP YOUR ORIGINAL SCRIPT SECTION EXACTLY AS IT IS -->
+
+    <script>
+      // COMPLETE FIXED SCRIPT SECTION - Copy & Paste Ready
+
+      // 1. Navbar scroll effect
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // 2. Active nav link highlighting
+      const sections = document.querySelectorAll("section[id]");
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        document.querySelectorAll(".nav-links a").forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // 3. FIXED Testimonials Carousel
+      function initTestimonials() {
+        const container = document.getElementById("testimonialSlider");
+        const cards = container.querySelectorAll(".testimonial-card");
+        let currentIndex = 0;
+        const intervalTime = 4000; // 4 seconds
+
+        function showSlide(index) {
+          cards.forEach((card, i) => {
+            card.classList.remove("active");
+            if (i === index) {
+              card.classList.add("active");
+            }
+          });
+        }
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % cards.length;
+          showSlide(currentIndex);
+        }
+
+        // Start automatic rotation
+        setInterval(nextSlide, intervalTime);
+
+        // Initial slide
+        showSlide(currentIndex);
+      }
+
+      // 4. Benefit cards hover effects
+      document.querySelectorAll(".benefit-card").forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          card.classList.add("hover");
+        });
+        card.addEventListener("mouseleave", () => {
+          card.classList.remove("hover");
+        });
+      });
+
+      // 5. Form submission handlers
+      function handleFormSubmit(formId, successMessage) {
+        const form = document.getElementById(formId);
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert(successMessage);
+            this.reset();
+          });
+        }
+      }
+
+      // Initialize all forms
+      handleFormSubmit(
+        "requestForm",
+        "✅ Quote request submitted successfully!",
+      );
+      handleFormSubmit("submitForm", "✅ Your quote submitted successfully!");
+      handleFormSubmit(
+        "contactForm",
+        "✅ Message sent successfully! We'll reply within 24 hours.",
+      );
+
+      // 6. Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetSection = document.querySelector(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // 7. Initialize everything when DOM is loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        initTestimonials();
+
+        // Trigger initial navbar check
+        window.dispatchEvent(new Event("scroll"));
+      });
+
+      // 8. Handle window resize for responsive behavior
+      window.addEventListener("resize", () => {
+        // Re-initialize testimonials if needed
+        if (document.getElementById("testimonialSlider")) {
+          initTestimonials();
+        }
+      });
+    </script>
+  </body>
+</html>
